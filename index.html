@@ -4,28 +4,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Practice</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Internto</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="icon" href="assets/images/favicon.png">
+    <link rel="stylesheet" href="assets/css/style.css">    
 </head>
-
 <body>
-    <header>
-        <h1>Basic html structure to begin</h1>
+    <header class="main-header">
+        <div class="navbar content-wrap d-flex">
+            <div class="logo">
+                <img src="assets/images/icons/logo.svg" alt="main logo">
+                <span>Interno</span> 
+            </div> 
+            <div class="menu-icon">
+                <div class="menu-icon-open"><i class="fa-solid fa-bars"></i></div>
+                <div class="menu-icon-close"><i class="fa-solid fa-xmark"></i></div>
+            </div>     
+            <ul class="main-menu d-flex">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Pages</a></li>
+                <li><a href="#">Services</a></li> 
+                <li><a href="#">Project</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><img src="assets/images/icons/search-icon.svg" alt=""></li>
+            </ul>     
+        </div>
     </header>
-    <main>
-        <section>
-            <h2>Main section</h2>
-            <p>
-                This is the first page of an academic project
-            </p>
-        </section>
-    </main>
-    <footer>
-        <p>
-            © 2026 Educational practice
-        </p>
-    </footer>
+
+    <section class="hero">
+    </section>
+
     <script src="assets/js/main.js"></script>
+
 </body>
 
 </html>
