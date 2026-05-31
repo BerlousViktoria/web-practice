@@ -8,3 +8,15 @@ iconBlock.addEventListener('click', () => (
     iconClose.classList.toggle('d-none'),
     mainMenu.classList.toggle('menu-open')
 ))
+
+const loginBtn = document.getElementById('loginBtn');
+const closeModal = document.getElementById('closeModal');
+const modal = document.getElementById('modal');
+
+loginBtn.addEventListener('click', () => (
+    modal.classList.remove('d-none')
+))
+
+closeModal.addEventListener('click', () => (
+    modal.classList.add('d-none')
+))

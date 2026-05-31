@@ -58,7 +58,7 @@ ul{
     right: 20px;
     color: var(--color-dark);
     gap: 10px;
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 
 .navbar .logo span{
@@ -117,12 +117,12 @@ ul{
     align-items: flex-start;
 }
 .hero-title{
-    font-size: 55px;
+    font-size: 3.438rem;
 }
 
 .hero-subtitle{
     margin-top: 9px;
-    font-size: 22px;
+    font-size: 1.375rem;
     font-family: var(--font-family-body);
     color: var(--color-content);
 }
@@ -130,7 +130,7 @@ ul{
 .btn{
     margin-top: 21px;
     background-color: var(--color-dark);
-    font-size: 18px;
+    font-size: 1.125rem;
     font-family: var(--font-family-body);
     color: var(--color-bright);
     width: 50px;
@@ -144,7 +144,59 @@ ul{
     display: none;
 }
 
+.modal-wrap{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #292937a8;
+}
 
+.modal{
+    width: 80vw;
+    height: 50dvh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--color-bright);
+    font-family: var(--font-family-body);
+}
+
+.close-modal{
+    margin: 10px;
+}
+
+
+.modal-form label:not(:first-child){
+    margin-top: 10px;
+}
+
+.modal-form input{
+    margin-top: 20px;
+}
+
+.modal-form{
+    height: calc(100% - 50px);
+    flex-direction: column;
+}
+  
+.modal-form input[type="submit"]{
+    margin-top: 20px;
+}
+
+.modal-form .btn{
+    width: 100px;
+}
+
+.modal-form input:not([type="submit"]){
+    height: 30px;
+}
+
+.close-modal{
+    cursor: pointer;
+}
 
 /* |-------------| Media Query |-------------| */
 
@@ -160,7 +212,7 @@ ul{
     }
 
     .logo span{
-        font-size: 40px;
+        font-size: 2.5rem;
     }
 
     .logo{
@@ -183,7 +235,7 @@ ul{
     }
     
     .main-menu li a{
-        font-size: 20px;
+        font-size: 1.25rem;
         color: var(--color-dark);  
         line-height: 125%;                      
     }
@@ -205,11 +257,11 @@ ul{
     }
 
     .hero-subtitle{
-        font-size: 22px;
+        font-size: 1.375rem;
         font-family: var(--font-family-body);
     }
     .btn{
-        font-size: 18px;
+        font-size: 1.125rem;
         font-family: var(--font-family-body);
         font-weight: bold;
         color: var(--color-bright);
@@ -224,6 +276,14 @@ ul{
         display: inline;
         margin-right: 10px;
         font-weight: 600;
+    }
+
+    .modal-form input:not([type="submit"]){
+        width: 300px;
+    }
+
+    .modal-form .btn{
+        height: 40px;
     }
 }
 
