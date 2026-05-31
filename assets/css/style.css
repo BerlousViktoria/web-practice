@@ -78,8 +78,6 @@ ul{
     height: calc(100vh - 50px);
     width: 100vw;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     background-color:var(--color-bright);
     color: var(--color-dark);
 }
@@ -99,7 +97,9 @@ ul{
     font-family: var(--font-family-body);     
 }
 
+/* Sections */
 
+/* Hero Section */
 .hero{
     height: calc(100vh - 50px);
     background-image: url('../images/header-bg.jpg');
@@ -110,7 +110,6 @@ ul{
 
 .hero-container {
     height: 100%;
-    align-items: center;
     justify-content: flex-start;
 }
 
@@ -146,6 +145,46 @@ ul{
 .btn span{
     display: none;
 }
+
+/* Features Sections */
+
+.features{
+    margin-top: 40px;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+}
+
+.feature-item{
+    width: 300px;
+    text-align: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.feature-title{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.feature-subtitle{
+    font-size: 1.4rem;
+    font-family: var(--font-family-body);
+    color: var(--color-content);
+}
+
+.feature-button{
+    margin-top: 22px;    
+    font-size: 1.125rem;
+    font-family: var(--font-family-body);
+    text-decoration: none;
+    color: var(--color-content);
+    font-weight: 600;
+    gap: 12px;
+}
+
+
+/* Modal */
 
 .modal-wrap{
     position: absolute;
@@ -228,7 +267,6 @@ ul{
         height: auto;
         gap: 40px;
         justify-content: center;
-        align-items: center;
         background-color: transparent;
         font-family: var(font-family-body);         
     }
@@ -282,6 +320,42 @@ ul{
         margin-right: 10px;
         font-weight: 600;
     }
+
+    .features{
+        margin-top: 200px;
+        flex-direction: row;
+        gap: 42px;
+
+    }
+
+    .feature-item{
+        width: 300px;
+        text-align: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .feature-title{
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+    .feature-subtitle{
+        font-size: 1.4rem;
+        font-family: var(--font-family-body);
+        color: var(--color-content);
+    }
+
+    .feature-button{
+        margin-top: 32px;    
+        font-size: 1.125rem;
+        font-family: var(--font-family-body);
+        text-decoration: none;
+        color: var(--color-content);
+        font-weight: 600;
+        gap: 12px;
+    }    
+
 
     .modal-form input:not([type="submit"]){
         width: 300px;
