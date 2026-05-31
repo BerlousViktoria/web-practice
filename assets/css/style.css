@@ -57,7 +57,6 @@ ul{
 }
 
 
-
 /* |-------------| Header |-------------| */
 
 .navbar{
@@ -222,7 +221,7 @@ ul{
     margin-top: 15px;
     gap: 20px;
 }
-
+   
 .phone-number address{
     font-weight: bold;
     font-family: var(--font-family-body);
@@ -234,6 +233,62 @@ ul{
     font-size: 1.375rem;
     font-family: var(--font-family-body);
 }
+
+/* Review Section */
+
+.review-container{
+    margin-top: 40px;
+    flex-direction: column;
+    background-color:var(--color-bright);
+    border-radius: 70px;
+    gap: 38px;    
+    text-align: center;
+}
+
+.review{
+    flex-direction: column;    
+    gap: 20px;
+}
+
+.review-item{
+    background-color: #fff;
+    flex-direction: column;
+    border-radius: 40px;    
+    padding: 20px;
+}
+
+.reviewer-photo{
+    border-radius: 50%;
+    margin-right: 23px;
+}
+
+.reviewer-info p:first-child{
+    font-weight: bold;
+}
+
+.reviewer-info p:last-child{
+    font-family: var(--font-family-body);
+    color: var(--color-content);  
+}
+.reviewer-info p{
+    font-size: 1.563rem;
+}
+
+.reviewer{
+    flex-direction: row;
+    margin-bottom: 25px; 
+}
+
+.review-title{
+    margin-top: 44px;
+}
+
+.review-item:last-child{
+    margin-bottom: 44px;
+}
+
+
+
 
 /* Modal */
 
