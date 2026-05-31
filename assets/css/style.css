@@ -121,16 +121,17 @@ ul{
 }
 
 .hero-subtitle{
+    margin-top: 9px;
     font-size: 22px;
     font-family: var(--font-family-body);
+    color: var(--color-content);
 }
 
 .btn{
-    margin-top: 10px;
+    margin-top: 21px;
     background-color: var(--color-dark);
     font-size: 18px;
     font-family: var(--font-family-body);
-    font-weight: bold;
     color: var(--color-bright);
     width: 50px;
     height: 45px;
@@ -206,6 +207,23 @@ ul{
     .hero-subtitle{
         font-size: 22px;
         font-family: var(--font-family-body);
+    }
+    .btn{
+        font-size: 18px;
+        font-family: var(--font-family-body);
+        font-weight: bold;
+        color: var(--color-bright);
+        width: 220px;
+        height: 75px;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+    .btn span{
+        display: inline;
+        margin-right: 10px;
+        font-weight: 600;
     }
 }
 
