@@ -417,6 +417,47 @@ ul{
         gap: 12px;
     }    
 
+    .contact-container{
+        margin-top: 200px;
+        gap: 75px;        
+    }
+
+    .contact{         
+        flex-direction: column;
+        justify-content: flex-start; 
+    }
+
+    .contact-title{ 
+        margin-top: 43px;
+        font-size: 3.125rem;
+    }
+    
+    .contact-subtitle{      
+        margin-bottom: 45px;
+    }
+
+    .phone-icon{
+        width: 60px;
+        height: 60px;
+        background-color: var(--color-bright);
+        border-radius: 50%;
+    }
+
+    .phone-icon img{
+        width: 30px;
+        height: 30px;
+    }
+
+    .contact-info{
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .contact-image{
+        display: flex;
+        border-radius:  0px 326.5px 0 123px;        
+    }
+
     .modal-form input:not([type="submit"]){
         width: 300px;
     }
