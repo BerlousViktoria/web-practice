@@ -43,6 +43,7 @@ ul{
 }
 
 
+
 /* |-------------| Header |-------------| */
 
 .navbar{
@@ -104,6 +105,46 @@ ul{
     background-position: center;
 }
 
+.hero-container {
+    height: 100%;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.hero-content {
+    max-width: 650px;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.hero-title{
+    font-size: 55px;
+}
+
+.hero-subtitle{
+    font-size: 22px;
+    font-family: var(--font-family-body);
+}
+
+.btn{
+    margin-top: 10px;
+    background-color: var(--color-dark);
+    font-size: 18px;
+    font-family: var(--font-family-body);
+    font-weight: bold;
+    color: var(--color-bright);
+    width: 50px;
+    height: 45px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn span{
+    display: none;
+}
+
+
+
 /* |-------------| Media Query |-------------| */
 
 @media screen and (min-width: 840px) {
@@ -152,6 +193,19 @@ ul{
 
     .hero{
         height: calc(100vh - 138px);
+    }
+
+    .hero-content{
+        flex-direction: column;
+    }
+
+    .hero-title{
+        font-size: 85px;
+    }
+
+    .hero-subtitle{
+        font-size: 22px;
+        font-family: var(--font-family-body);
     }
 }
 
