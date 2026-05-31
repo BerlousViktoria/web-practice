@@ -37,6 +37,17 @@ body{
     display: none;
 }
 
+.title{
+    font-size: 2.125rem;
+}
+
+.subtitle{
+    font-size: 1.375rem;
+    color: var(--color-content);
+    font-family: var(--font-family-body);
+}
+
+
 a{
     text-decoration: none;
 }
@@ -104,7 +115,6 @@ ul{
     height: calc(100vh - 50px);
     background-image: url('../images/header-bg.jpg');
     background-repeat: no-repeat;
-    background-size: cover;
     background-position: center;
 }
 
@@ -148,7 +158,7 @@ ul{
 
 /* Features Sections */
 
-.features{
+.features-container{
     margin-top: 40px;
     flex-direction: column;
     gap: 40px;
@@ -183,6 +193,47 @@ ul{
     gap: 12px;
 }
 
+/* Contact Section */
+
+.contact{         
+    flex-direction: column;
+    justify-content: flex-start;    
+}
+
+.contact-title{ 
+    margin-top: 50px;
+    font-size: 2.125rem;
+    margin-bottom: 33px;
+}
+
+.phone-icon{
+    width: 60px;
+    height: 60px;
+    background-color: var(--color-bright);
+    border-radius: 50%;
+}
+
+.phone-icon img{
+    width: 30px;
+    height: 30px;
+}
+
+.contact-info{
+    margin-top: 15px;
+    gap: 20px;
+}
+
+.phone-number address{
+    font-weight: bold;
+    font-family: var(--font-family-body);
+    font-style: normal;
+    font-size: 1.375rem;
+}
+
+.phone-number p{
+    font-size: 1.375rem;
+    font-family: var(--font-family-body);
+}
 
 /* Modal */
 
@@ -245,6 +296,16 @@ ul{
 @media screen and (min-width: 840px) {
     .content-wrap{
         padding-left: 10px;
+    }
+
+    .title{
+        font-size: 3.125rem;
+    }
+
+    .subtitle{
+        font-size: 1.375rem;
+        color: var(--color-content);
+        font-family: var(--font-family-body);
     }
 
     .navbar{
@@ -321,7 +382,7 @@ ul{
         font-weight: 600;
     }
 
-    .features{
+    .features-container{
         margin-top: 200px;
         flex-direction: row;
         gap: 42px;
@@ -355,7 +416,6 @@ ul{
         font-weight: 600;
         gap: 12px;
     }    
-
 
     .modal-form input:not([type="submit"]){
         width: 300px;
