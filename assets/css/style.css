@@ -200,9 +200,9 @@ ul{
 }
 
 .contact-title{ 
-    margin-top: 50px;
+    margin-top: 40px;
     font-size: 2.125rem;
-    margin-bottom: 33px;
+    margin-bottom: 15px;
 }
 
 .phone-icon{
@@ -341,6 +341,16 @@ ul{
 
 .close-modal{
     cursor: pointer;
+}
+
+
+/* Brand Section */
+
+.brand-list{
+    flex-wrap: wrap;
+    width: 400px;
+    margin-top: 40px;
+    gap: 50px;
 }
 
 /* |-------------| Media Query |-------------| */
