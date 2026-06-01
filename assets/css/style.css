@@ -271,7 +271,7 @@ ul{
     color: var(--color-content);  
 }
 .reviewer-info p{
-    font-size: 1.563rem;
+    font-size: 1.375rem;
 }
 
 .reviewer{
@@ -286,9 +286,6 @@ ul{
 .review-item:last-child{
     margin-bottom: 44px;
 }
-
-
-
 
 /* Modal */
 
@@ -349,175 +346,150 @@ ul{
 /* |-------------| Media Query |-------------| */
 
 @media screen and (min-width: 840px) {
-    .content-wrap{
-        padding-left: 10px;
-    }
 
-    .title{
+    /* General */
+    .title {
         font-size: 3.125rem;
     }
 
-    .subtitle{
-        font-size: 1.375rem;
-        color: var(--color-content);
-        font-family: var(--font-family-body);
-    }
-
-    .navbar{
+    /* Header */
+    .navbar {
         height: 138px;
-        width: 100%;
-        position: relative;
     }
 
-    .logo span{
-        font-size: 2.5rem;
-    }
-
-    .logo{
-        display: flex;
-    }
-
-    .main-menu{
+    .main-menu {
         position: static;
         flex-direction: row;
         height: auto;
         gap: 40px;
         justify-content: center;
         background-color: transparent;
-        font-family: var(font-family-body);         
     }
 
-    .main-menu li:not(:last-child){
+    .main-menu li:not(:last-child) {
         margin-bottom: 0;
     }
-    
-    .main-menu li a{
+
+    .main-menu li a {
         font-size: 1.25rem;
-        color: var(--color-dark);  
-        line-height: 125%;                      
+        line-height: 125%;
     }
 
-    .menu-icon{
+    .menu-icon {
         display: none;
     }
 
-    .hero{
+    /* Hero */
+    .hero {
+        width: 100vw;
         height: calc(100vh - 138px);
         border-radius: 0px 0px 0px 291px;
-        background-size: cover;        
+        background-size: cover;
     }
 
-    .hero-content{
-        flex-direction: column;
-    }
-
-    .hero-title{
+    .hero-title {
         font-size: 85px;
     }
 
-    .hero-subtitle{
-        font-size: 1.375rem;
-        font-family: var(--font-family-body);
-    }
-    .btn{
-        font-size: 1.125rem;
-        font-family: var(--font-family-body);
-        font-weight: bold;
-        color: var(--color-bright);
+    /* Button */
+    .btn {
         width: 220px;
         height: 75px;
-        border: none;
-        border-radius: 10px;
-        cursor: pointer;
+        font-weight: bold;
     }
 
-    .btn span{
+    .btn span {
         display: inline;
         margin-right: 10px;
         font-weight: 600;
     }
 
-    .features-container{
+    /* Features */
+    .features-container {
         margin-top: 200px;
         flex-direction: row;
         gap: 42px;
-
     }
 
-    .feature-item{
-        width: 300px;
-        text-align: center;
-        flex-direction: column;
+    .feature-item {
         gap: 20px;
     }
 
-    .feature-title{
-        font-size: 1.5rem;
-        font-weight: bold;
+    .feature-button {
+        margin-top: 32px;
     }
 
-    .feature-subtitle{
-        font-size: 1.4rem;
-        font-family: var(--font-family-body);
-        color: var(--color-content);
-    }
-
-    .feature-button{
-        margin-top: 32px;    
-        font-size: 1.125rem;
-        font-family: var(--font-family-body);
-        text-decoration: none;
-        color: var(--color-content);
-        font-weight: 600;
-        gap: 12px;
-    }    
-
-    .contact-container{
+    /* Contact */
+    .contact-container {
         margin-top: 200px;
-        gap: 75px;        
+        gap: 75px;
     }
 
-    .contact{         
-        flex-direction: column;
-        justify-content: flex-start; 
-    }
-
-    .contact-title{ 
+    .contact-title {
         margin-top: 43px;
         font-size: 3.125rem;
     }
-    
-    .contact-subtitle{      
+
+    .contact-subtitle {
         margin-bottom: 45px;
     }
 
-    .phone-icon{
-        width: 60px;
-        height: 60px;
-        background-color: var(--color-bright);
-        border-radius: 50%;
-    }
-
-    .phone-icon img{
-        width: 30px;
-        height: 30px;
-    }
-
-    .contact-info{
+    .contact-info {
         justify-content: flex-start;
-        align-items: center;
     }
 
-    .contact-image{
+    .contact-image {
         display: flex;
-        border-radius:  0px 326.5px 0 123px;        
+        border-radius: 0px 326.5px 0 123px;
     }
 
-    .modal-form input:not([type="submit"]){
+    /* Review */
+    .review-container {
+        margin-top: 200px;
+        padding: 44px 0;
+        height: auto;
+    }
+
+    .review {
+        flex-direction: row;
+        align-items: stretch;
+    }
+
+    .review-item {
+        min-width: 0;
+        max-width: 370px;
+        min-height: 340px;
+        padding: 0 37px;
+        align-items: flex-start;
+    }
+
+    .review-item .subtitle {
+        width: 296px;
+        text-align: left;
+        margin-bottom: 52px;        
+    }
+
+    .review-item:last-child {
+        margin-bottom: 0;
+    }
+
+    .reviewer {
+        margin-top: 53px;
+        justify-content: flex-start;       
+    }
+
+    .review-title {
+        width: 547px;
+        height: 126px;
+        margin-top: 44px;
+    }
+
+    /* Modal */
+    .modal-form input:not([type="submit"]) {
         width: 300px;
     }
 
-    .modal-form .btn{
+    .modal-form .btn {
         height: 40px;
     }
 }
