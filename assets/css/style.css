@@ -296,6 +296,67 @@ ul{
     gap: 50px;
 }
 
+/* Project Section */
+
+.project-container{
+    margin-top: 50px;
+    width: 400px;
+    flex-direction: column;
+    text-align: center;
+}
+
+.project-container p{
+    margin-top: 8px;
+}
+
+.project-card{
+    width: 300px;
+}
+
+.project-card:first-child{
+    margin-top: 40px;
+    width: 300px;
+}
+
+#project-1{
+    border-radius: 0px 80px 0px 0px;
+}
+#project-2{
+    border-radius: 80px 0px 0px 0px;
+}
+#project-3{
+    border-radius: 0px 0px 80px 0px;
+}
+#project-4{
+    border-radius: 0px 0px 0px 80px;    
+}
+
+.project-item{
+    margin-top: 32px;
+}
+
+.project-content{
+    margin-top: 24px;    
+    flex-direction: column;
+    gap: 20px;
+}
+
+.project-name{
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.project-subttile{
+    font-size: 1.4rem;
+    font-family: var(--font-family-body);
+    color: var(--color-content);
+}
+.project-button-link{
+    width: 50px;
+    height: 50px;
+    background-color: var(--color-bright);
+    border-radius: 50%;
+}
 /* Modal */
 
 .modal-wrap{
