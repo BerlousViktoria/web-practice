@@ -287,6 +287,15 @@ ul{
     margin-bottom: 44px;
 }
 
+/* Brand Section */
+
+.brand-list{
+    flex-wrap: wrap;
+    width: 400px;
+    margin-top: 40px;
+    gap: 50px;
+}
+
 /* Modal */
 
 .modal-wrap{
@@ -341,16 +350,6 @@ ul{
 
 .close-modal{
     cursor: pointer;
-}
-
-
-/* Brand Section */
-
-.brand-list{
-    flex-wrap: wrap;
-    width: 400px;
-    margin-top: 40px;
-    gap: 50px;
 }
 
 /* |-------------| Media Query |-------------| */
@@ -494,6 +493,16 @@ ul{
         margin-top: 44px;
     }
 
+    /* Brand Section */
+
+    .brand-list{
+        flex-wrap: nowrap;
+        width: 1090px;
+        height: 102px;
+        margin-top: 150px;
+        gap: 108px;
+    }
+
     /* Modal */
     .modal-form input:not([type="submit"]) {
         width: 300px;
@@ -503,6 +512,3 @@ ul{
         height: 40px;
     }
 }
-
-
-
