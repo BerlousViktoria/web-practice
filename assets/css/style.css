@@ -195,12 +195,14 @@ ul{
 
 /* Contact Section */
 
-.contact{         
+.contact{     
+        text-align: center;    
     flex-direction: column;
     justify-content: flex-start;    
 }
 
 .contact-title{ 
+
     margin-top: 40px;
     font-size: 2.125rem;
     margin-bottom: 15px;
