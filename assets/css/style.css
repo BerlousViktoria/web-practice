@@ -84,7 +84,7 @@ ul{
 .main-menu{
     position: absolute;
     top: 50px;
-    left: -100vh;
+    right: 2000px;
     height: calc(100vh - 50px);
     width: 100vw;
     flex-direction: column;
@@ -422,7 +422,7 @@ ul{
 
 /* |-------------| Media Query |-------------| */
 
-@media screen and (min-width: 840px) {
+@media screen and (min-width: 1220px) {
 
     /* General */
     .title {
