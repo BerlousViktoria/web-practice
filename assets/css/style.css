@@ -84,7 +84,7 @@ ul{
 .main-menu{
     position: absolute;
     top: 50px;
-    right: 1000px;
+    left: -100vh;
     height: calc(100vh - 50px);
     width: 100vw;
     flex-direction: column;
@@ -115,6 +115,7 @@ ul{
     background-image: url('../images/header-bg.jpg');
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
 }
 
 .hero-container {
