@@ -364,6 +364,45 @@ ul{
     background-color: var(--color-bright);
     border-radius: 50%;
 }
+
+/* Summary Section */
+
+.summary-container{
+    margin-top: 40px;
+    background-color: var(--color-bright);
+}
+
+/* padding 151px 0 для компа */
+.summary-list{
+    padding: 50px 0;
+    flex-direction: column;
+}
+
+.summary-list :last-child{
+    border: none;
+}
+
+.summary-item{
+    width: 200px;
+    padding-bottom: 20px;
+    margin-top: 16px;
+    flex-direction: column;
+    border-bottom: 1px solid;
+    border-color:  var(--color-summary-text);
+}
+
+.summary-item :first-child{
+    font-size: 4.813rem;
+    color: var(--color-summary-text);
+    font-family: var(--font-family-heading);
+}
+
+.summary-item :last-child{
+    font-size: 1.375rem;
+    color: var(--color-content);
+    font-family: var(--font-family-body);
+}
+
 /* Modal */
 
 .modal-wrap{
