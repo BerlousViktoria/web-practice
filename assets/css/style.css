@@ -1043,6 +1043,13 @@ ul{
         gap: 54px;
     }
 
+    /* Footer */
+
+    .footer-copyright{
+        margin-top: 134px;
+        margin-bottom: 46px;
+    }
+
     /* Modal */
     .modal-form input:not([type="submit"]) {
         width: 300px;
