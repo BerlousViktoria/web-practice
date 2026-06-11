@@ -118,16 +118,17 @@ ul{
     background-size: cover;
 }
 
-.hero-container {
+.hero-inner {
     height: 100%;
     justify-content: flex-start;
 }
 
-.hero-content {
+.hero-body {
     max-width: 650px;
     flex-direction: column;
     align-items: flex-start;
 }
+
 .hero-title{
     font-size: 3.438rem;
 }
@@ -156,34 +157,34 @@ ul{
     display: none;
 }
 
-/* Features Sections */
+/* Services Section */
 
-.features-container{
+.services-section{
     margin-top: 40px;
     flex-direction: column;
     gap: 40px;
     align-items: center;
 }
 
-.feature-item{
+.service-card{
     width: 300px;
     text-align: center;
     flex-direction: column;
     gap: 10px;
 }
 
-.feature-title{
+.service-card-title{
     font-size: 1.5rem;
     font-weight: bold;
 }
 
-.feature-subtitle{
+.service-card-text{
     font-size: 1.4rem;
     font-family: var(--font-family-body);
     color: var(--color-content);
 }
 
-.feature-button{
+.service-card-link{
     margin-top: 22px;    
     font-size: 1.125rem;
     font-family: var(--font-family-body);
@@ -193,45 +194,45 @@ ul{
     gap: 12px;
 }
 
-/* Contact Section */
+/* About Section */
 
-.contact{     
+.about-inner{     
     text-align: center;    
     flex-direction: column;
     justify-content: flex-start;    
 }
 
-.contact-title{ 
+.about-title{ 
     margin-top: 40px;
     font-size: 2.125rem;
     margin-bottom: 15px;
 }
 
-.phone-icon{
+.about-phone-icon{
     width: 60px;
     height: 60px;
     background-color: var(--color-bright);
     border-radius: 50%;
 }
 
-.phone-icon img{
+.about-phone-icon img{
     width: 30px;
     height: 30px;
 }
 
-.contact-info{
+.about-phone{
     margin-top: 15px;
     gap: 20px;
 }
    
-.phone-number address{
+.about-phone-info address{
     font-weight: bold;
     font-family: var(--font-family-body);
     font-style: normal;
     font-size: 1.375rem;
 }
 
-.phone-number p{
+.about-phone-info p{
     font-size: 1.375rem;
     font-family: var(--font-family-body);
 }
@@ -289,18 +290,18 @@ ul{
     margin-bottom: 44px;
 }
 
-/* Brand Section */
+/* Partners Section */
 
-.brand-list{
+.partners-list{
     flex-wrap: wrap;
     width: 400px;
     margin-top: 40px;
     gap: 50px;
 }
 
-/* Project Section */
+/* Portfolio Section */
 
-.project-container{
+.portfolio-section{
     margin-top: 50px;
     width: auto;
     max-width: 700px;
@@ -308,81 +309,81 @@ ul{
     text-align: center;
 }
 
-.project-container p{
+.portfolio-section p{
     margin-top: 8px;
 }
 
-.project-card{
+.portfolio-card-image{
     width: 300px;
 }
 
-.project-card:first-child{
+.portfolio-card-image:first-child{
     margin-top: 40px;
     width: 300px;
 }
 
-#project-1{
+#portfolio-1{
     border-radius: 0px 80px 0px 0px;
 }
-#project-2{
+#portfolio-2{
     border-radius: 80px 0px 0px 0px;
 }
-#project-3{
+#portfolio-3{
     border-radius: 0px 0px 80px 0px;
 }
-#project-4{
+#portfolio-4{
     border-radius: 0px 0px 0px 80px;    
 }
 
-.project-item{
+.portfolio-card{
     margin-top: 32px;
 }
 
-.project-content{
+.portfolio-card-body{
     margin-top: 24px;    
     flex-direction: column;
     gap: 20px;
 }
 
-.project-list{
+.portfolio-list{
     flex-direction: column;
 }
 
-.project-name{
+.portfolio-card-title{
     font-size: 1.4rem;
     font-weight: bold;
 }
 
-.project-subttile{
+.portfolio-card-subtitle{
     font-size: 1.4rem;
     font-family: var(--font-family-body);
     color: var(--color-content);
 }
-.button-link{
+
+.icon-link{
     width: 50px;
     height: 50px;
     background-color: var(--color-bright);
     border-radius: 50%;
 }
 
-/* Summary Section */
+/* Stats Section */
 
-.summary-container{
+.stats-section{
     margin-top: 40px;
     background-color: var(--color-bright);
 }
 
-/* padding 151px 0 для компа */
-.summary-list{
+.stats-list{
     padding: 50px 0;
     flex-direction: column;
 }
 
-.summary-list :last-child{
+.stats-list :last-child{
     border: none;
 }
 
-.summary-item{
+.stat-card{
     width: 200px;
     padding-bottom: 20px;
     margin-top: 16px;
@@ -391,51 +392,51 @@ ul{
     border-color:  var(--color-summary-text);
 }
 
-.summary-item :first-child{
+.stat-card :first-child{
     font-size: 4.813rem;
     color: var(--color-summary-text);
     font-family: var(--font-family-heading);
 }
 
-.summary-item :last-child{
+.stat-card :last-child{
     font-size: 1.375rem;
     color: var(--color-content);
     font-family: var(--font-family-body);
 }
 
-/* Article Section */
+/* Blog Section */
 
-.article-container{
+.blog-section{
     margin-top: 40px;
     flex-direction: column;
     text-align: center;
 }
 
-.article-container h2{
+.blog-section h2{
     font-size: 2.125rem;
     margin-bottom: 12px;    
 }
 
-.article-container p{
+.blog-section p{
     font-size: 1.375rem;
     color: var(--color-content);
 }
 
-.article-list{    
+.blog-list{    
     margin-top: 22px;
     flex-direction: column;
     gap: 27px;   
 }
 
-.article-item:nth-child(2){
+.blog-card:nth-child(2){
     background-color: var(--color-bright);
 }
 
-.article-item:nth-child(2) .button-link{
+.blog-card:nth-child(2) .icon-link{
     background-color: white;
 }
 
-.article-item{
+.blog-card{
     position: relative;
     width: 300px;    
     padding-top: 21px;
@@ -444,7 +445,7 @@ ul{
     border-radius: 62px;
 }
 
-.article-item span{
+.blog-card span{
     position: absolute;
     background-color: white;
     bottom: 220px;
@@ -455,7 +456,7 @@ ul{
     font-family: var(--font-family-body);
 }
 
-.article-item p{
+.blog-card p{
     margin-top: 10px;
     width: 230px;
     margin-left: 30px;
@@ -464,35 +465,35 @@ ul{
     font-family: var(--font-family-heading);
 }
 
-.article-item time{
+.blog-card time{
     font-family: var(--font-family-body);
     color: var(--color-content);
     font-size: 1rem;
 }
 
-.article-info{
+.blog-card-footer{
     margin-top: 20px;
     gap: 56px;
 }
 
-.article-item .button-link{
+.blog-card .icon-link{
     width: 50px;
     height: 50px;
 }
 
-.article-item .button-link img{
+.blog-card .icon-link img{
     width: 12px;
     height: 12px;
 }
 
-.article-image{
+.blog-card-image{
     width: 240px;
     border-radius: 45px 45px 0px 0px;    
 }
 
-/* Contact With Us Section */
+/* CTA Section */
 
-.contact-us{
+.cta-inner{
     margin: 40px auto;
     padding: 81px 0;
     background-color: var(--color-dark);
@@ -502,43 +503,43 @@ ul{
     border-radius: 50px;
 }
 
-.contact-us h2{
+.cta-inner h2{
     font-size: 2.125rem;
 }
 
-.contact-us p{
+.cta-inner p{
     margin-top: 11px;
     font-family: var(--font-family-body);
 }
 
-.contact-us .btn{
+.cta-inner .btn{
     box-shadow: 0px 10px 20px #1F2022;
     background-color: var(--color-summary-text);
 }
 
-/* Pre-Footer Section */
+/* Prefooter Section */
 
-.pre-footer-container ul {
+.prefooter ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-.pre-footer-container a {
+.prefooter a {
     text-decoration: none;
     color: inherit;
 }
 
-.pre-footer-container {
+.prefooter {
     width: 100%;
 }
 
-.pre-footer {
+.footer-top {
     flex-direction: column;
     gap: 40px;
 }
 
-.footer-col {
+.footer-column {
     flex-direction: column;
     align-items: center;
     text-align: center;
@@ -553,7 +554,7 @@ ul{
     color: var(--color-dark)
 }
 
-.footer-text {
+.footer-description {
     font-size: 1.375rem;
     text-align: center;
     margin-top: 18px;
@@ -563,7 +564,7 @@ ul{
     max-width: 300px;
 }
 
-.footer-socials {
+.social-links {
     display: flex;
     gap: 20px;
 }
@@ -575,18 +576,18 @@ ul{
     margin-bottom: 20px;
 }
 
-.footer-links li {
+.footer-nav li {
     margin-bottom: 35px;
     font-size: 1.375rem;
     font-family: var(--font-family-body);
     color: var(--color-content);
 }
 
-.footer-links a:hover {
+.footer-nav a:hover {
     color: #cda274;
 }
 
-.contact-us-info {
+.footer-contact-info {
     margin: 0;
     width: 258px;
     font-size: 1.375rem;
@@ -594,11 +595,10 @@ ul{
     color: var(--color-content);
     font-style: normal;
 }
-.contact-us-info p{
+
+.footer-contact-info p{
     padding-bottom: 35px;
 }
-
-
 
 
 /* Modal */
@@ -626,7 +626,6 @@ ul{
 .close-modal{
     margin: 10px;
 }
-
 
 .modal-form label:not(:first-child){
     margin-top: 10px;
@@ -659,14 +658,14 @@ ul{
 
 /* |-------------| Media Query |-------------| */
 @media screen and (min-width: 890px){
-    .project-list{
+    .portfolio-list{
         width: 650px;
         flex-direction: row;
         flex-wrap: wrap;
         gap: 50px;
     }
 
-    .article-list{
+    .blog-list{
         justify-content: center;
         align-items: center;
         flex-direction: row;
@@ -733,41 +732,41 @@ ul{
         font-weight: 600;
     }
 
-    /* Features */
-    .features-container {
+    /* Services */
+    .services-section {
         margin-top: 200px;
         flex-direction: row;
         gap: 42px;
     }
 
-    .feature-item {
+    .service-card {
         gap: 20px;
     }
 
-    .feature-button {
+    .service-card-link {
         margin-top: 32px;
     }
 
-    /* Contact */
-    .contact-container {
+    /* About */
+    .about-section {
         margin-top: 200px;
         gap: 75px;
     }
 
-    .contact-title {
+    .about-title {
         margin-top: 43px;
         font-size: 3.125rem;
     }
 
-    .contact-subtitle {
+    .about-subtitle {
         margin-bottom: 45px;
     }
 
-    .contact-info {
+    .about-phone {
         justify-content: flex-start;
     }
 
-    .contact-image {
+    .about-image {
         display: flex;
         border-radius: 0px 326.5px 0 123px;
     }
@@ -813,9 +812,9 @@ ul{
         margin-top: 44px;
     }
 
-    /* Brand Section */
+    /* Partners Section */
 
-    .brand-list{
+    .partners-list{
         flex-wrap: nowrap;
         width: 1090px;
         height: 102px;
@@ -823,36 +822,35 @@ ul{
         gap: 108px;
     }
 
-    /* Project Section */
+    /* Portfolio Section */
 
-    .project-container{
+    .portfolio-section{
         margin-top: 150px;
         max-width: 1220px;
-
     }
 
-    .project-container .subtitle{
+    .portfolio-section .subtitle{
         width: 737px;
     }
 
-    .project-card:first-child{
+    .portfolio-card-image:first-child{
         margin-top: 40px;
         width: 525px;
         height: 548px;
     }
 
-    .project-item{
+    .portfolio-card{
         margin-top: 0;
     }
 
-    .project-content{
+    .portfolio-card-body{
         text-align: left;
         margin-top: 24px;    
         flex-direction: row;
         gap: 260px;
     }
 
-    .project-list{
+    .portfolio-list{
         margin-top: 93px;
         width: 100%;
         flex-direction: row;
@@ -861,26 +859,26 @@ ul{
         row-gap: 56px;
     }
 
-    .project-name{
+    .portfolio-card-title{
         font-size: 1.563rem;
     }
 
-    .project-subttile{
+    .portfolio-card-subtitle{
         font-size: 1.375rem;
     }
     
-    .button-link{
+    .icon-link{
         width: 70px;
         height: 70px;
     }
 
-    /* Summary Section */
+    /* Stats Section */
 
-    .summary-container{
+    .stats-section{
         margin-top: 200px;
     }
 
-    .summary-list{
+    .stats-list{
         width: 1082px;
         margin: 0 auto;
         padding: 151px 0;
@@ -888,11 +886,11 @@ ul{
         justify-content: space-between;        
     }
 
-    .summary-list :last-child{
+    .stats-list :last-child{
         border: none;
     }
 
-    .summary-item{
+    .stat-card{
         position: relative;
         flex: 1;
         margin-top: 16px;
@@ -900,7 +898,7 @@ ul{
         border: none;
     }
 
-    .summary-item::after{
+    .stat-card::after{
         position: absolute;
         content: "";
         right: 0;
@@ -909,35 +907,35 @@ ul{
         border-color: var(--color-summary-text);        
     }
 
-    .summary-item:last-child::after {
+    .stat-card:last-child::after {
         display: none;
     }    
 
-    /* Article Section */
+    /* Blog Section */
 
-    .article-container{
+    .blog-section{
         margin-top: 200px;
     }
 
-    .article-desciption{
+    .blog-header{
         width: 811px;
     }
 
-    .article-container h2{
+    .blog-section h2{
         font-size: 3.125rem;   
     }
 
-    .article-container p{
+    .blog-section p{
         font-size: 1.375rem;
     }
 
-    .article-list{  
+    .blog-list{  
         margin-top: 52px;  
         flex-direction: row;
         flex-wrap: nowrap;
     }
 
-    .article-item{
+    .blog-card{
         position: relative;
         width: 382px;
         height: 521px;    
@@ -945,13 +943,13 @@ ul{
         padding-bottom: 38px;
     }
 
-    .article-item span{
+    .blog-card span{
         bottom: 231px;
         left: 41px;
         padding: 12px;
     }    
 
-    .article-item p{
+    .blog-card p{
         margin-top: 10px;
         width: 305px;
         margin-left: 30px;
@@ -960,13 +958,13 @@ ul{
         font-family: var(--font-family-heading);
     }
 
-    .article-item time{
+    .blog-card time{
         font-family: var(--font-family-body);
         color: var(--color-content);
         font-size: 1rem;
     }
 
-    .article-info{
+    .blog-card-footer{
         position: absolute;
         left: 30px;
         bottom: 17px;
@@ -974,66 +972,64 @@ ul{
         padding-bottom: 17px;
     }
 
-    .article-item .button-link{
+    .blog-card .icon-link{
         width: 52px;
         height: 52px;
     }
 
-    .article-image{
+    .blog-card-image{
         width: 340px;   
     }
 
-    /* Contact With Us Section */
+    /* CTA Section */
 
-    .contact-us-container{
+    .cta-section{
         padding: 0;
     }
 
-    .contact-us{
+    .cta-inner{
         margin: 200px auto;
         padding: 80px 315px;
         border-radius: 70px;
     }
 
-    .contact-us h2{
+    .cta-inner h2{
         font-size: 3.125rem;
     }
 
-    .contact-us p{
+    .cta-inner p{
         margin-top: 11px;
         margin-bottom: 32px;
     }
 
-    .contact-us .btn{
+    .cta-inner .btn{
         margin-top: 0;
     }
-    /* Pre-Footer Section */
 
-    .pre-footer {
+    /* Prefooter Section */
+
+    .footer-top {
         flex-direction: row;
         gap: 101px;
     }
 
-    .col-info{
+    .footer-column--info{
         width: 393px;
     }
 
-    .footer-col{
+    .footer-column{
         align-items: flex-start;
         text-align: left;
     }
 
-    .footer-text{
+    .footer-description{
         text-align: left;
         max-width: none;
-        
     }
 
-    .footer-socials{
+    .social-links{
         gap: 54px;
     }
-
-    
 
     /* Modal */
     .modal-form input:not([type="submit"]) {
