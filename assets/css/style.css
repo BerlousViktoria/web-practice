@@ -107,7 +107,7 @@ ul{
     font-family: var(--font-family-body);     
 }
 
-/* Sections */
+/* |-------------| Sections |-------------| */
 
 /* Hero Section */
 .hero{
@@ -600,8 +600,20 @@ ul{
     padding-bottom: 35px;
 }
 
+/* Footer */
+.footer-copyright{
+    margin-bottom: 46px;
+    padding-top: 41px;
+}
 
-/* Modal */
+.copyright-text{
+    font-size: 1.375rem;
+    text-align: center;
+    font-family: var(--font-family-body);
+    color: var(--color-content);
+}
+
+/* |-------------| Modal |-------------| */
 
 .modal-wrap{
     position: absolute;
