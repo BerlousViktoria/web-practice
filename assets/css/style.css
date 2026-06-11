@@ -490,6 +490,31 @@ ul{
     border-radius: 45px 45px 0px 0px;    
 }
 
+/* Contact With Us Section */
+
+.contact-us{
+    margin: 40px auto;
+    padding: 81px 0;
+    background-color: var(--color-dark);
+    color: white;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 50px;
+}
+
+.contact-us h2{
+    font-size: 2.125rem;
+}
+
+.contact-us p{
+    margin-top: 11px;
+    font-family: var(--font-family-body);
+}
+
+.contact-us .btn{
+    box-shadow: 0px 10px 20px #1F2022;
+    background-color: var(--color-summary-text);
+}
 
 /* Modal */
 
@@ -871,6 +896,31 @@ ul{
 
     .article-image{
         width: 340px;   
+    }
+
+    /* Contact With Us Section */
+
+    .contact-us-container{
+        padding: 0;
+    }
+
+    .contact-us{
+        margin: 200px auto;
+        padding: 80px 315px;
+        border-radius: 70px;
+    }
+
+    .contact-us h2{
+        font-size: 3.125rem;
+    }
+
+    .contact-us p{
+        margin-top: 11px;
+        margin-bottom: 32px;
+    }
+
+    .contact-us .btn{
+        margin-top: 0;
     }
   
 
