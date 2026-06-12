@@ -20,3 +20,19 @@ loginBtn.addEventListener('click', () => (
 closeModal.addEventListener('click', () => (
     modal.classList.add('d-none')
 ))
+
+
+const animatedItems = document.querySelectorAll('.fade');
+
+const scrollObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('appear');
+            observer.unobserve(entry.target);
+        }
+    });
+}, { threshold: 0.15});
+
+animatedItems.forEach(item => {
+    scrollObserver.observe(item);
+});

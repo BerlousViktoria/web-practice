@@ -13,6 +13,7 @@
 body{
     color: var(--color-dark);
     position: relative;
+    overflow-x: hidden;
 }
 
 .grid-lines {
@@ -118,10 +119,14 @@ ul{
     background-color:var(--color-bright);
     color: var(--color-dark);
 }
-
 .main-menu.menu-open{
     left: 0;
 }
+
+.main-menu li:last-child{
+    height: 23px;
+}
+
 
 
 .main-menu li:not(:last-child){
@@ -151,10 +156,13 @@ ul{
 }
 
 .hero-body {
+    margin-bottom: 100px;
     max-width: 650px;
     flex-direction: column;
     align-items: flex-start;
 }
+
+
 
 .hero-title{
     font-size: 3.438rem;
@@ -1084,4 +1092,18 @@ ul{
         height: 40px;
     }
 
+}
+
+/* |-------------| JS |-------------| */
+
+.fade{
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    will-change: opacity, transform;
+}
+
+.fade.appear{
+    opacity: 1;
+    transform: translateY(0);    
 }
