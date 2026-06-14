@@ -4,6 +4,10 @@
 
 /* |-------------| General |-------------| */
 
+html{
+    scroll-behavior: smooth;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -1091,7 +1095,7 @@ ul{
     .modal-form .btn {
         height: 40px;
     }
-
+    
 }
 
 /* |-------------| JS |-------------| */
