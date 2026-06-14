@@ -21,6 +21,7 @@ body{
 }
 
 .grid-lines {
+    width: 1200px;
     position: fixed;
     top: 0;
     left: 50%;
@@ -166,8 +167,6 @@ ul{
     align-items: flex-start;
 }
 
-
-
 .hero-title{
     font-size: 3.438rem;
 }
@@ -254,9 +253,14 @@ ul{
     border-radius: 50%;
 }
 
+
 .about-phone-icon img{
     width: 30px;
     height: 30px;
+}
+
+.about-section .btn{
+    margin: 20px auto;
 }
 
 .about-phone{
@@ -480,6 +484,7 @@ ul{
     width: 300px;    
     padding-top: 21px;
     padding-bottom: 38px;
+    background-color: white;
     border: 1px solid #E7E7E7;
     border-radius: 62px;
 }
@@ -730,7 +735,18 @@ ul{
     }
 
     /* Header */
+    .main-header{
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .navbar .logo{
+        margin-right: 432px;
+    }
+
     .navbar {
+        padding: 0;
+        width: 1200px;
         height: 138px;
     }
 
@@ -789,6 +805,7 @@ ul{
     }
 
     .service-card {
+        width: 360px;
         gap: 20px;
     }
 
@@ -799,15 +816,22 @@ ul{
     /* About */
     .about-section {
         margin-top: 200px;
+        padding: 0;
         gap: 75px;
+    }
+
+    .about-inner{
+        text-align: left;
     }
 
     .about-title {
         margin-top: 43px;
+        margin-bottom: 0;
         font-size: 3.125rem;
     }
 
     .about-subtitle {
+        margin-top: 33px;
         margin-bottom: 45px;
     }
 
@@ -815,9 +839,18 @@ ul{
         justify-content: flex-start;
     }
 
+    .about-phone-info{
+        text-align: left;
+    }
+
     .about-image {
         display: flex;
         border-radius: 0px 326.5px 0 123px;
+    }
+
+    .about-section .btn{
+        margin-top: 47px;
+        margin-left: 0;
     }
 
     /* Review */
@@ -883,7 +916,7 @@ ul{
     }
 
     .portfolio-card-image:first-child{
-        margin-top: 40px;
+        margin-top: 0;
         width: 525px;
         height: 548px;
     }
@@ -892,7 +925,12 @@ ul{
         margin-top: 0;
     }
 
+    .portfolio-card-image{
+        width: 547px;                
+    }    
+
     .portfolio-card-body{
+        width: 525px;
         text-align: left;
         margin-top: 24px;    
         flex-direction: row;
@@ -913,6 +951,7 @@ ul{
     }
 
     .portfolio-card-subtitle{
+        width: 200px;
         font-size: 1.375rem;
     }
     
